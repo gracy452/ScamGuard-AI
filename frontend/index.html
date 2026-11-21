@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScamGuard AI | Job Scam Detection</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">🛡️</div>
+            <div>
+                <h2>ScamGuard</h2>
+                <span>AI SECURITY</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <p class="nav-heading">MENU</p>
+
+            <a href="#overview" class="nav-link active">
+                <span>▦</span> Overview
+            </a>
+
+            <a href="#manual-analysis" class="nav-link">
+                <span>⌕</span> Manual Job Analysis
+            </a>
+
+            <a href="#scanner" class="nav-link">
+                <span>▧</span> Screenshot Scanner
+            </a>
+
+            <a href="#assistant" class="nav-link">
+                <span>✧</span> AI Assistant
+            </a>
+
+            <a href="#safety" class="nav-link">
+                <span>♢</span> Safety Awareness
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="security-card">
+                <span>🛡️</span>
+                <h4>Stay Protected</h4>
+                <p>Verify before you trust. Stay safe while searching for jobs.</p>
+            </div>
+
+            <p class="sidebar-footer">ScamGuard AI © 2026</p>
+
+        </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">Workspace / Overview</p>
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="topbar-right">
+                <span class="status-indicator"></span>
+                <span>AI System Active</span>
+            </div>
+
+        </header>
+
+
+        <!-- OVERVIEW -->
+        <section id="overview" class="welcome-section">
+
+            <div>
+                <p class="eyebrow">WELCOME TO SCAMGUARD AI</p>
+
+                <h1>Make Your Job Search <span>Safer.</span></h1>
+
+                <p class="welcome-description">
+                    Analyze job advertisements, identify suspicious patterns
+                    and make informed career decisions with AI-powered insights.
+                </p>
+
+                <a href="#manual-analysis" class="primary-button">
+                    Analyze a Job →
+                </a>
+            </div>
+
+            <div class="welcome-illustration">
+                <div class="shield-circle">🛡️</div>
+                <span class="floating-icon">🔍</span>
+            </div>
+
+        </section>
+
+
+        <!-- FEATURE CARDS -->
+        <section class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon blue">⌨️</div>
+                <h3>Manual Job Analysis</h3>
+                <p>Enter job information and predict potential scam risks.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon purple">📸</div>
+                <h3>OCR Scanner</h3>
+                <p>Extract job details directly from screenshots.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon green">🤖</div>
+                <h3>AI Explanation</h3>
+                <p>Understand suspicious indicators and safety risks.</p>
+            </div>
+
+        </section>
+
+
+        <!-- MANUAL ANALYSIS -->
+        <section id="manual-analysis" class="content-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">MANUAL ANALYSIS</p>
+                    <h2>Analyze a Job Posting</h2>
+                    <p>Enter job advertisement details manually to check its potential scam risk.</p>
+                </div>
+            </div>
+
+            <div class="scanner-card">
+
+                <form id="manualJobForm">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="manual_title">Job Title</label>
+                            <input type="text" id="manual_title" name="title" placeholder="e.g. Software Developer">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_location">Location</label>
+                            <input type="text" id="manual_location" name="location" placeholder="e.g. Indore, India">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_department">Department</label>
+                            <input type="text" id="manual_department" name="department" placeholder="e.g. Engineering">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_salary">Salary Range</label>
+                            <input type="text" id="manual_salary" name="salary_range" placeholder="e.g. 3-5 LPA">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_employment">Employment Type</label>
+                            <input type="text" id="manual_employment" name="employment_type" placeholder="e.g. Full-time">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_experience">Required Experience</label>
+                            <input type="text" id="manual_experience" name="required_experience" placeholder="e.g. Entry level">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_education">Required Education</label>
+                            <input type="text" id="manual_education" name="required_education" placeholder="e.g. Bachelor's degree">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_industry">Industry</label>
+                            <input type="text" id="manual_industry" name="industry" placeholder="e.g. Information Technology">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_function">Job Function</label>
+                            <input type="text" id="manual_function" name="function" placeholder="e.g. Software Development">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_telecommuting">Remote Work</label>
+                            <select id="manual_telecommuting" name="telecommuting">
+                                <option value="f">Not specified / No</option>
+                                <option value="t">Yes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_logo">Company Logo</label>
+                            <select id="manual_logo" name="has_company_logo">
+                                <option value="f">Not identified / No</option>
+                                <option value="t">Yes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="manual_questions">Screening Questions</label>
+                            <select id="manual_questions" name="has_questions">
+                                <option value="f">Not specified / No</option>
+                                <option value="t">Yes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="manual_company_profile">Company Profile</label>
+                            <textarea id="manual_company_profile" name="company_profile" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="manual_description">Job Description</label>
+                            <textarea id="manual_description" name="description" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="manual_requirements">Requirements</label>
+                            <textarea id="manual_requirements" name="requirements" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="manual_benefits">Benefits</label>
+                            <textarea id="manual_benefits" name="benefits" rows="3"></textarea>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="primary-button" id="manualAnalyzeButton">
+                        Analyze Job &amp; Generate Prediction →
+                    </button>
+
+                    <p id="manualStatus" class="status-message" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+
+        <!-- SCREENSHOT SCANNER -->
+        <section id="scanner" class="content-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">IMAGE ANALYSIS</p>
+                    <h2>Screenshot Scanner</h2>
+                    <p>Upload a job advertisement to extract its information.</p>
+                </div>
+            </div>
+
+            <div class="scanner-card">
+
+                <!-- UPLOAD AREA -->
+                <div class="upload-area" id="uploadArea">
+
+                    <div class="upload-icon">☁️</div>
+
+                    <h3>Upload Job Advertisement</h3>
+
+                    <p>Drag and drop your image here or browse files.</p>
+
+                    <p class="file-types">Supported formats: JPG, JPEG, PNG</p>
+
+                    <input
+                        type="file"
+                        id="jobImage"
+                        name="file"
+                        accept=".jpg,.jpeg,.png,image/jpeg,image/png"
+                        hidden
+                    >
+
+                    <label
+                        for="jobImage"
+                        class="secondary-button"
+                        id="browseButton"
+                        role="button"
+                        tabindex="0"
+                    >
+                        Browse Image
+                    </label>
+
+                    <p id="fileName" class="file-name"></p>
+
+                </div>
+
+
+                <!-- IMAGE PREVIEW: OUTSIDE OCR RESULT -->
+                <div id="imagePreviewContainer" class="image-preview-container hidden">
+
+                    <h3>Selected Advertisement</h3>
+
+                    <img
+                        id="imagePreview"
+                        src=""
+                        alt="Selected job advertisement preview"
+                        class="image-preview"
+                    >
+
+                </div>
+
+
+                <!-- SCAN BUTTON -->
+                <button
+                    type="button"
+                    id="scanButton"
+                    class="primary-button"
+                >
+                    Scan Advertisement →
+                </button>
+
+                <p id="scanStatus" class="status-message" aria-live="polite"></p>
+
+
+                <!-- OCR RESULT FORM -->
+                <div id="ocrResult" class="result-panel hidden">
+
+                    <h3>Extracted Job Information</h3>
+
+                    <p>Review and correct these details before prediction.</p>
+
+                    <form id="jobDetailsForm">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="title">Job Title</label>
+                                <input type="text" id="title" name="title">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="department">Department</label>
+                                <input type="text" id="department" name="department">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="salary_range">Salary Range</label>
+                                <input type="text" id="salary_range" name="salary_range">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="employment_type">Employment Type</label>
+                                <input type="text" id="employment_type" name="employment_type">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="required_experience">Required Experience</label>
+                                <input type="text" id="required_experience" name="required_experience">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="required_education">Required Education</label>
+                                <input type="text" id="required_education" name="required_education">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="industry">Industry</label>
+                                <input type="text" id="industry" name="industry">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="function">Job Function</label>
+                                <input type="text" id="function" name="function">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telecommuting">Remote Work</label>
+                                <select id="telecommuting" name="telecommuting">
+                                    <option value="f">Not specified / No</option>
+                                    <option value="t">Yes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="has_company_logo">Company Logo</label>
+                                <select id="has_company_logo" name="has_company_logo">
+                                    <option value="f">Not identified / No</option>
+                                    <option value="t">Yes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="has_questions">Screening Questions</label>
+                                <select id="has_questions" name="has_questions">
+                                    <option value="f">Not specified / No</option>
+                                    <option value="t">Yes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="company_profile">Company Profile</label>
+                                <textarea id="company_profile" name="company_profile" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="description">Job Description</label>
+                                <textarea id="description" name="description" rows="4"></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="requirements">Requirements</label>
+                                <textarea id="requirements" name="requirements" rows="4"></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="benefits">Benefits</label>
+                                <textarea id="benefits" name="benefits" rows="3"></textarea>
+                            </div>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="primary-button"
+                            id="ocrAnalyzeButton"
+                        >
+                            Analyze Job with AI →
+                        </button>
+
+                        <p id="ocrAnalysisStatus" class="status-message" aria-live="polite"></p>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PREDICTION RESULT -->
+        <section id="predictionResult" class="content-section hidden">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ANALYSIS REPORT</p>
+                    <h2>Job Risk Assessment</h2>
+                    <p>Review the machine learning prediction and AI-generated explanation.</p>
+                </div>
+            </div>
+
+            <div class="scanner-card">
+                <div id="predictionOutput"></div>
+            </div>
+
+        </section>
+
+
+        <!-- AI ASSISTANT -->
+        <section id="assistant" class="content-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">AI SUPPORT</p>
+                    <h2>ScamGuard Assistant</h2>
+                    <p>Get guidance about recruitment fraud and job safety.</p>
+                </div>
+            </div>
+
+            <div class="assistant-card chatbot-card">
+
+                <div class="chatbot-header">
+
+                    <div class="chatbot-profile">
+
+                        <div class="assistant-icon">🤖</div>
+
+                        <div>
+                            <h3>ScamGuard Assistant</h3>
+                            <p class="chatbot-status">
+                                <span class="status-indicator"></span>
+                                Online · Job Safety Support
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <button type="button" id="clearChatButton" class="secondary-button">
+                        Clear Chat
+                    </button>
+
+                </div>
+
+
+                <div class="chat-messages" id="chatMessages" aria-live="polite">
+
+                    <div class="chat-message bot-message">
+
+                        <div class="message-avatar">🤖</div>
+
+                        <div class="message-content">
+
+                            <span class="message-sender">ScamGuard Assistant</span>
+
+                            <div class="message-bubble">
+                                Hello! 👋 Welcome to ScamGuard Assistant.
+
+                                I can help you identify fake job offers,
+                                understand recruitment scams, verify recruiters
+                                and learn safe job-search practices.
+
+                                How can I help you today?
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="typingIndicator" class="typing-indicator hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <p>ScamGuard Assistant is typing...</p>
+                </div>
+
+
+                <div class="suggested-questions" id="suggestedQuestions">
+
+                    <p>Try asking:</p>
+
+                    <button type="button" class="suggestion-button">
+                        How do I identify a fake job offer?
+                    </button>
+
+                    <button type="button" class="suggestion-button">
+                        Is it safe to pay a recruitment fee?
+                    </button>
+
+                    <button type="button" class="suggestion-button">
+                        How can I verify a company?
+                    </button>
+
+                </div>
+
+
+                <form id="chatForm" class="chat-input-form">
+
+                    <input
+                        type="text"
+                        id="chatInput"
+                        name="message"
+                        placeholder="Ask anything about job safety..."
+                        autocomplete="off"
+                        maxlength="2000"
+                        required
+                    >
+
+                    <button type="submit" id="sendChatButton" class="primary-button">
+                        Send ➤
+                    </button>
+
+                </form>
+
+                <p id="chatStatus" class="status-message" aria-live="polite"></p>
+
+                <p class="chatbot-disclaimer">
+                    ScamGuard Assistant provides general job safety guidance.
+                    Always verify important information through official sources.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- SAFETY AWARENESS -->
+        <section id="safety" class="content-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">STAY INFORMED</p>
+                    <h2>Job Safety Awareness</h2>
+                    <p>Remember these important precautions while applying for jobs.</p>
+                </div>
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon blue">💳</div>
+                    <h3>Never Pay to Get Hired</h3>
+                    <p>Be cautious of recruiters demanding registration or interview fees.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon purple">🔐</div>
+                    <h3>Protect Personal Data</h3>
+                    <p>Never share passwords, OTPs or sensitive financial details.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">🏢</div>
+                    <h3>Verify Employers</h3>
+                    <p>Check company websites and official recruitment channels.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <p>ScamGuard AI | AI-Powered Job Scam Detection System</p>
+            <p>Predictions are estimates, not proof of fraud.</p>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
